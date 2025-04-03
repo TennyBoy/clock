@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --bg-primary: rgba(255,255,255,1);
     --txt-primary: rgba(0,0,0,1);
 
-    --ff-primary: "Covered By Your Grace", cursive;
+    --ff-primary: 'Roboto', sans-serif;
 }
 
 .darkmode {
@@ -36,34 +36,38 @@ body {
 #hero {
     height: 100svh;
     width: 100%;
+    position: relative;
 }
 
-.wrapper {
-    height: 100%;
-    width: 90%;
-    margin-inline: auto;
-}
 
-.split {
-    display: flex;
-    flex-direction: column;
-}
 
 .div1 {
-    height: 70svh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .div2 {
-    height: 30svh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    -webkit-transform: translate(-50%, -15%);
+    -moz-transform: translate(-50%, -15%);
+    -ms-transform: translate(-50%, -15%);
+    -o-transform: translate(-50%, -15%);
 }
 
 #clock {
@@ -82,4 +86,15 @@ body {
     background: none;
     color: var(--txt-primary);
     border: 0.05em solid var(--txt-primary);
+    font-family: var(--ff-primary);
+    transition: 250ms;
+    -webkit-transition: 250ms;
+    -moz-transition: 250ms;
+    -ms-transition: 250ms;
+    -o-transition: 250ms;
+}
+
+#themeChange:hover {
+    background-color: var(--txt-primary);
+    color: var(--bg-primary);
 }
