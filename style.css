@@ -87,6 +87,7 @@ body {
     color: var(--txt-primary);
     border: 0.05em solid var(--txt-primary);
     font-family: var(--ff-primary);
+    font-size: clamp(0.25rem, 0.075vw + 1rem, 4rem);
     transition: 250ms;
     -webkit-transition: 250ms;
     -moz-transition: 250ms;
