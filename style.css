@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+:root {
+    --bg-primary: rgba(255,255,255,1);
+    --txt-primary: rgba(0,0,0,1);
+
+    --ff-primary: "Covered By Your Grace", cursive;
+}
+
+.darkmode {
+    --bg-primary: rgba(0,0,0,1);
+    --txt-primary: rgba(255,255,255,1);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100svh;
+    width: 100%;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    font-family: var(--ff-primary);
+}
+
+#hero {
+    height: 100svh;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+.div1 {
+    height: 70svh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.div2 {
+    height: 30svh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-size: clamp(4rem, 12vw + 1rem, 20rem);
+    font-weight: 100;
+}
+
+#date {
+    font-size: clamp(1.25rem, 1.5vw + 1rem, 8rem);
+    font-weight: 100;
+}
+
+#themeChange {
+    z-index: 9999;
+    padding: 0.5em;
+    background: none;
+    color: var(--txt-primary);
+    border: 0.05em solid var(--txt-primary);
+}
