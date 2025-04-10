@@ -10,7 +10,7 @@ const updateTime = () => {
   document.getElementById('clock').textContent = timeString;
 
   //For Date
-  const day = now.getDay();
+  const day = now.getDate();
   const monthName = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
     'August', 'September', 'October', 'November', 'December'];
   const month = monthName[now.getMonth()];
